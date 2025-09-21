@@ -1,7 +1,12 @@
-html {
-    background-color: hsl(212, 45%, 89%);
+:root {
+    --bg-color: hsl(212, 45%, 89%);
+    --h2-color: hsl(218, 44%, 22%);
+    --p-color: hsl(216, 15%, 48%);
 }
-
+html {
+    background-color: var(--bg-color);
+    font-family: Arial, Helvetica, sans-serif, 'Outfit';
+}
 @font-face {
     font-family: 'Outfit';
     src: url('Outfit-VariableFont_wght.ttf') format('truetype');
@@ -15,31 +20,31 @@ html {
     height: 100vh;               /* prend toute la hauteur de l'écran */
 }
 .qrcode {
-    width: 290px;
-    padding: 15px;
+    width: 20rem;
+    padding: 1rem;
     justify-content: center;
     background-color: hsl(0, 0%, 100%);
     font-family: 'Outfit';
     text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1.5rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
 }
 .qrcode h2 {
     font-weight: 700;
-    font-size: 22px;
-    color: hsl(218, 44%, 22%);
+    font-size: 1.5rem;
+    color: var(--h2-color);
 }
 .qrcode p {
     font-weight: 400;
-    font-size: 15px;
-    color:hsl(216, 15%, 48%);
-    margin-right: 15px;
-    margin-left: 15px;
+    font-size: 1rem;
+    color:var(--p-color);
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
     
 }
 .qrcode img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    border-radius: 10px;
+    border-radius: 1em;
 }
